@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Moments | Ultra-Colorful Gifting</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="light-theme">
+
+    <div class="theme-switch" id="themeSwitch">
+        <i class="fa-solid fa-moon"></i>
+    </div>
+
+    <div id="cartDrawer" class="cart-drawer">
+        <div class="cart-header">
+            <h3>Your Gift Box</h3>
+            <span id="closeCart">&times;</span>
+        </div>
+        <div id="cartItemsList" class="cart-items-list">
+            <p class="empty-msg">Your box is empty. Start gifting!</p>
+        </div>
+        <div class="cart-footer">
+            <div class="total-row">Total: <span id="cartTotal">$0.00</span></div>
+            <button class="checkout-btn gradient-primary">Proceed to Checkout</button>
+            <button class="clear-cart" id="clearCart">Clear All</button>
+        </div>
+    </div>
+
+    <div id="searchOverlay" class="search-overlay">
+        <button class="close-search" id="closeSearch"><i class="fa-solid fa-xmark"></i></button>
+        <div class="search-inner">
+            <input type="text" id="megaSearch" placeholder="Find the perfect moment...">
+            <div id="searchStats"></div>
+        </div>
+    </div>
+
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">Happy<span>Moments.</span></a>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#shop">Collection</a></li>
+                <li><a href="#">Bespoke</a></li>
+            </ul>
+            <div class="nav-icons">
+                <i class="fa-solid fa-magnifying-glass" id="searchOpen"></i>
+                <div class="cart-icon-wrapper" id="cartOpen">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span id="cartCount">0</span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero" id="home">
+        <div class="hero-bg"></div>
+        <div class="hero-content revealactive">
+            <span class="badge-vibrant gradient-secondary">Season Collection 2026</span>
+            <h1>Make Every Moment <br><span class="text-gradient-colorful">Special</span></h1>
+            <p>Explore our exclusive collection of vibrant, personalized gifts designed to bring a smile to your loved ones.</p>
+            <a href="#shop" class="cta-btn gradient-primary">Shop Collection</a>
+        </div>
+    </header>
+
+    <section class="shop-section" id="shop">
+        <div class="container">
+            <div class="shop-header revealactive">
+                <h2>Our Curations</h2>
+                <div class="filter-pills">
+                    <button class="pill active" data-filter="all">All Items</button>
+                    <button class="pill gradient-primary" data-filter="wellness">Wellness</button>
+                    <button class="pill gradient-secondary" data-filter="decor">Decor</button>
+                    <button class="pill gradient-tech" data-filter="tech">Tech</button>
+                </div>
+            </div>
+
+            <div class="product-grid" id="productGrid">
+                </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2026 Happy Moments. Super-Colorful Pro Edition.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
